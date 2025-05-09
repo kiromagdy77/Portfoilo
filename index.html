@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="icon" href="Materials/00.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <button onclick="scrollToSection('about')">About</button>
+            <button onclick="scrollToSection('projects')">Projects</button>
+            <button onclick="scrollToSection('skills')">Skills</button>
+        </nav>
+    </header>
+    <main class="main-container" id="about">
+        <section class="main-section1">
+            <img src="Materials/1.png" alt="Kirollos Magdy Image">
+            <h1>Kirollos Magdy</h1>
+            <h2>Front-End Developer</h2>
+            <p>I'm a dedicated <span>Web Developer</span> under training</p>
+            <p>with a passion for crafting visually striking highly</p>
+            <p>functional websites that deliver exceptional user<br>experiences.</p>
+            <h4>Contact Me :</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/kiromagdy11?locale=ar_AR" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/+201270200486" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/kiromagdy_7/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/kiromagdy77" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kirollos-magdy-1102a1278/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:kiromagdy123@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div>
+                <a href="CV/KM-CV.pdf" download target="_blank"><button class="download-resume"><i
+                            class="fa-solid fa-file-arrow-down"></i>Download Resume</button></a>
+            </div>
+        </section>
+        <section class="main-section2">
+            <img src="Materials/SVG1.svg" alt="Laptop">
+        </section>
+    </main>
+    <hr>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h4 class="projects-title">Projects</h4>
+        <aside class="projects-container">
+            <span class="projects-buttons-container">
+                <button><i class="fa-solid fa-file-code"></i>All</button>
+                <button><i class="fa-brands fa-html5"></i>HTML & CSS</button>
+                <button><i class="fa-brands fa-js"></i>JavaScript</button>
+                <button><i class="fa-brands fa-bootstrap"></i>Bootstrap</button>
+                <button><i class="fa-brands fa-react"></i>React</button>
+            </span>
+            <div class="projects-cards-container">
+                <!-- HTML & CSS Projects -->
+                <div class="project-card" data-category="HTML & CSS">
+                    <img src="Materials/MakoStore P2.png" alt="Project 1" loading="lazy">
+                    <h3>MakoStore</h3>
+                    <p>HTML & CSS</p>
+                </div>
+                <div class="project-card" data-category="HTML & CSS">
+                    <img src="Materials/CookChef P1.png" alt="Project 2" loading="lazy">
+                    <h3>CookChef</h3>
+                    <p>HTML & CSS</p>
+                </div>
+                <div class="project-card" data-category="HTML & CSS">
+                    <img src="Materials/DivStore P3.svg" alt="Project 3" loading="lazy">
+                    <h3>DivStore</h3>
+                    <p>HTML & CSS</p>
+                </div>
+                <div class="project-card" data-category="HTML & CSS">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 4" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>HTML & CSS</p>
+                </div>
+
+                <!-- JavaScript Projects -->
+                <div class="project-card" data-category="JavaScript">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 5" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>JavaScript</p>
+                </div>
+                <div class="project-card" data-category="JavaScript">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 6" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>JavaScript</p>
+                </div>
+                <div class="project-card" data-category="JavaScript">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 7" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>JavaScript</p>
+                </div>
+                <div class="project-card" data-category="JavaScript">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 8" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>JavaScript</p>
+                </div>
+
+                <!-- Bootstrap Projects -->
+                <div class="project-card" data-category="Bootstrap">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 9" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>Bootstrap</p>
+                </div>
+                <div class="project-card" data-category="Bootstrap">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 10" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>Bootstrap</p>
+                </div>
+                <div class="project-card" data-category="Bootstrap">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 11" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>Bootstrap</p>
+                </div>
+                <div class="project-card" data-category="Bootstrap">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 12" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>Bootstrap</p>
+                </div>
+
+                <!-- React Projects -->
+                <div class="project-card" data-category="React">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 13" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>React</p>
+                </div>
+                <div class="project-card" data-category="React">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 14" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>React</p>
+                </div>
+                <div class="project-card" data-category="React">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 15" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>React</p>
+                </div>
+                <div class="project-card" data-category="React">
+                    <img src="Materials/STAY-Tuned.svg" alt="Project 16" loading="lazy">
+                    <h3>STAY-Tuned</h3>
+                    <p>React</p>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <hr>
+    <section id="skills">
+        <h3 class="projects-title">Skills</h3>
+        <h4 class="skills-text">The Skills I Have</h4>
+        <div class="skills-container">
+            <img src="Materials/Html.svg" alt="HTML" loading="lazy">
+            <img src="Materials/Css.svg" alt="CSS" loading="lazy">
+            <img src="Materials/Js.svg" alt="JavaScript" loading="lazy">
+            <img src="Materials/python.svg" alt="Python" loading="lazy">
+            <img src="Materials/Java.svg" alt="Java" loading="lazy">
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <h5>Designed & Developed by Kirollos Magdy</h5>
+        <p>© 2025 Kirollos Magdy. All rights reserved.</p>
+        <div class="social-icons-footer">
+            <a href="https://www.facebook.com/kiromagdy11?locale=ar_AR" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/+201270200486" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/kiromagdy_7/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/kiromagdy77" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kirollos-magdy-1102a1278/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="mailto:kiromagdy123@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
