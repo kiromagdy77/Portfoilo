@@ -57,14 +57,14 @@ body {
   justify-content: start;
   align-items: center;
   margin: auto;
-  gap: 300px;
+  gap: 250px;
 }
 .main-section1 {
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .main-section1 img {
   width: 250px;
@@ -116,16 +116,11 @@ body {
 }
 .main-section1 p {
   font-family: "Schibsted Grotesk", sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   color: var(--NavText-color);
   line-height: 1.4;
   margin: 0;
-  overflow: hidden;
-  overflow-y: hidden;
-  white-space: nowrap;
-  border-right: 3px solid var(--BG-color);
-  animation: typing 3.5s steps(60, end) 3.3s, blink 0.75s step-end infinite;
 }
 .main-section1 p span {
   color: var(--H-Title-color);
@@ -178,8 +173,22 @@ body {
   align-items: center;
 }
 .main-section2 img {
-  width: 620px;
-  height: 620px;
+  width: 600px;
+  height: 650px;
+  margin-top: 50px;
+  animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 hr {
@@ -264,7 +273,9 @@ hr {
   height: 160px;
   margin: 10px 10px 0 10px;
 }
-
+.project-card a {
+  text-decoration: none;
+}
 .project-card h3 {
   color: var(--NavText-color);
   font-family: "Roboto Condensed", sans-serif;
@@ -279,6 +290,12 @@ hr {
   margin: 0;
 }
 /*----------skills----------*/
+.skills-title {
+  color: var(--NavText-color);
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
 .skills-text {
   display: flex;
   justify-content: center;
@@ -339,7 +356,7 @@ footer p {
 }
 .social-icons-footer a {
   color: var(--NavText-color);
-  font-size: 20px;
+  font-size: 25px;
   transition: all 0.4s ease;
 }
 .social-icons-footer a:hover {
@@ -359,16 +376,19 @@ html {
     font-size: 35px;
   }
   .main-container {
-    gap: 270px;
+    gap: 0px;
+  }
+  .main-section1 img {
+    margin-top: 80px;
   }
   .main-section2 img {
     display: none;
   }
   .social-icons a {
-    font-size: 40px;
+    font-size: 50px;
   }
   .download-resume {
-    font-size: 35px;
+    font-size: 40px;
   }
   .main-section1 h1 {
     font-size: 50px;
@@ -378,9 +398,13 @@ html {
   }
   .main-section1 p {
     font-size: 25px;
+    animation: none;
   }
   .main-section1 h4 {
     font-size: 30px;
+  }
+  .projects-title {
+    margin-bottom: 50px;
   }
   .projects-container {
     margin: 0;
@@ -388,31 +412,42 @@ html {
   .projects-title {
     font-size: 35px;
   }
-  .skills-text {
+  .skills-title {
     font-size: 35px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 40px;
   }
   .projects-buttons-container button {
     font-size: 35px;
-    margin-right: 5px;
+
   }
   .skills-text {
-    font-size: 35px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 0px;
   }
   .skills-container img {
     width: 100px;
     height: 100px;
+    margin-bottom: 20px;
   }
   .skills-container img:hover {
     transform: scale(1.4);
   }
   footer h5 {
-    font-size: 35px;
-  }
-  footer p {
     font-size: 30px;
   }
+  footer p {
+    font-size: 25px;
+  }
+  .social-icons-footer {
+    gap: 20px;
+  }
   .social-icons-footer a {
-    font-size: 35px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
   .social-icons-footer a:hover {
     transform: scale(1.4);
