@@ -31,8 +31,8 @@ filterButtons.forEach(button => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const allButton = document.querySelector('.projects-buttons-container button:nth-child(2)');
+    const allButton = document.querySelector('.projects-buttons-container button:nth-child(1)');
     allButton.classList.add('active');
-    filterProjects('HTML & CSS');
+    filterProjects('All');
 });
 
